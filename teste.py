@@ -179,7 +179,7 @@ def buscar_produtos(busca):
         "sch"
         ]
 
-    busca = corrigir_palavras(busca, PALAVRAS_BUSCA
+    busca = corrigir_palavras(busca, PALAVRAS_BUSCA)
 
     busca = re.sub(r"\s+", " ", busca).strip()
 
