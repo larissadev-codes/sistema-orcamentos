@@ -88,7 +88,7 @@ def gerar_link_email(descricao):
     corpo = (
         f"Olá,\n\n"
         f"Por gentileza, orçar conforme descrição abaixo:\n"
-        f"{descricao}\n\n"
+        f"{descricao} - QUANTIDADE:\n\n"
         f"Agradeço desde já e aguardo o retorno.\n"
     )
 
