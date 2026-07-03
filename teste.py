@@ -29,7 +29,10 @@ def carregar_dados():
 
 df = carregar_dados()
 
-st.write(df.columns.tolist())
+
+st.write(df.head())
+st.write(df.dtypes)
+st.write(df.iloc[0])
 
 # ─────────────────────────────────────────────
 # CORREÇÃO DE TEXTO
@@ -340,7 +343,10 @@ if resposta:
 
                 for _, linha in resultado_df.iterrows():
 
-                    custo_raw = linha["CUSTO"]
+                    
+                    st.write(linha.index.tolist())
+                    custo_raw = linha.get("CUSTO", None)
+
                     try:
                         custo = float(str(custo_raw).replace(",", ".").strip())
                     except:
