@@ -163,7 +163,24 @@ def buscar_produtos(busca):
     busca = re.sub(r"dn\s*(\d+)",        r"dn \1",  busca)
     busca = re.sub(r"sch\s*(\d+)",       r"sch \1", busca)
     busca = corrigir_tokens_complexos(busca)
-    busca = corrigir_palavras(busca, ["tubo", "dn", "sch", "304", "316"])
+    
+    PALAVRAS_BUSCA = [
+        "tubo",
+        "flange",
+        "sorf",
+        "solto",
+        "cap",
+        "curva",
+        "luva",
+        "meia",
+        "304",
+        "316",
+        "dn",
+        "sch"
+        ]
+
+    busca = corrigir_palavras(busca, PALAVRAS_BUSCA
+
     busca = re.sub(r"\s+", " ", busca).strip()
 
     palavras = busca.split()
