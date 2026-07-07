@@ -17,7 +17,7 @@ import urllib.parse
 from datetime import datetime
 from difflib import get_close_matches
 
-data_atualizacao = datetime(2025, 5, 19)
+data_atualizacao = datetime(2026, 5, 19)
 
 # ─────────────────────────────────────────────
 # LER ARQUIVO
