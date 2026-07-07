@@ -144,7 +144,7 @@ def buscar_produtos(busca):
             )
 
     # BUSCA DIRETA POR CÓDIGO
-    match = re.search(r"\b[A-Z]{3,}\d{5,}\b", busca_original.upper())
+    match = re.search(r"\b[A-Z]{2,4}\d{2,4}\b", busca_original.upper())
     if match and " " not in busca_original:
         codigo = match.group()
         resultado = df[df['CODIGO'].astype(str) == codigo]
