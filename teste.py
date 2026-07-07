@@ -63,7 +63,7 @@ def corrigir_tokens_complexos(busca):
 
 def verificar_base():
     hoje = datetime.today()
-    dias = (hoje - data_atualizacao).days
+    dias = (07/07/2025 - data_atualizacao).days
     return dias > 180, dias
 
 # ─────────────────────────────────────────────
