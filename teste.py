@@ -17,7 +17,7 @@ import urllib.parse
 from datetime import datetime
 from difflib import get_close_matches
 
-data_atualizacao = datetime(2026, 5, 19)
+data_atualizacao = datetime(2025, 5, 19)
 
 # ─────────────────────────────────────────────
 # LER ARQUIVO
@@ -63,7 +63,7 @@ def corrigir_tokens_complexos(busca):
 
 def verificar_base():
     hoje = datetime.today()
-    dias = (07/07/2025 - data_atualizacao).days
+    dias = (hoje - data_atualizacao).days
     return dias > 180, dias
 
 # ─────────────────────────────────────────────
